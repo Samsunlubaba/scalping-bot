@@ -58,8 +58,8 @@ def open_trade(entry_price):
         )
         send_telegram(f"✅ ALIM YAPILDI\nFiyat: {entry_price} USDT")
 
-       tp = round(entry_price * 1.01, 2)
-       sl = round(entry_price * 0.985, 2)
+        tp = round(entry_price * 1.01, 2)
+        sl = round(entry_price * 0.985, 2)
 
 
         client.futures_create_order(
